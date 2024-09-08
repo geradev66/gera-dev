@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: #fffbe0;
+    transition: background-color 0.5s;
+}
+
+
+/* menu */
+.menu-nav{
+    z-index: 100;
+    font-family: "Abril Fatface", serif;
+}
+
+.menu-nav a:hover{
+    color: #ff6600;
+}
+
+/**/
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*bievenida*/
+.bienvenida h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+}
+
+.bienvenida h1 .nombre{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #ff6600;
+}
+
+.bienvenida h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*presentación*/
+.presentacion{
+    text-align: center;
+}
+.presentacion h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 3.5rem;
+
+}
+
+.presentacion p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+}
+
+.btn-primary{
+    background-color: #ff6600;
+    border: 0;
+}
+
+.btn-primary:hover{
+    background-color: #000000;
+    border: 0;
+    transition: 3000;
+}
+
+
+/*resumen sobre mi*/
+
+.acerca-de-mi{
+    background-color: #fff;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+.texto-sobre-mi h2{
+    font-family: "Abril Fatface", serif;
+
+}
+
+.texto-sobre-mi p{
+    font-family: "Raleway", sans-serif;
+
+}
+
+
+/*Habilidades*/
+
+.habilidades h2{
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    font-size: 3.5rem;
+}
+
+.card-body i{
+    font-size: 2rem ;
+    color:#ff6600;
+
+}
+
+.card:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.card-body h5{
+    font-family: "Abril Fatface", serif;
+
+}
+
+.card-body p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+
+}
+
+
+
+/*software*/
+
+.software h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Abril Fatface", serif;
+
+}
+
+
+/*colaborar*/
+.orange{
+    background-color: #ff6600;
+}
+
+.orange h2{
+    font-family: "Abril Fatface", serif;
+
+}
+
+.orange p {
+    font-family: "Raleway", sans-serif;
+}
+
+.imagen-dev img{
+    width: 100%;
+}
+
+/*news letter*/
+.newletter h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 3.5rem;
+
+}
+
+/* portafolio*/
+
+
+/*contacto*/
+
+.black-container{
+    color: white;
+    background-color: #000000;
+}
+
+/*footer*/
+footer{
+    background-color:#ff6600;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+
+@media(width <= 425px ){
+
+    .bienvenida h1{
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+    }
+
+    .container-fluid{
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .newletter h2{
+        font-family: "Abril Fatface", serif;
+        font-size: 2.5rem;
+    
+    }
+
+    .bienvenida h2 {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.6rem;
+        color: #000000;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .hero-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr; /* Modo columna única por defecto para móviles */
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .bienvenida {
+        text-align: center;
+    }
+    
+    .ilustracion {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ilustracion img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Para pantallas de tablets y laptops */
+    @media (min-width: 768px) {
+        .hero-content {
+            grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas más grandes */
+        }
+    
+        .bienvenida {
+            text-align: left;
+        }
+    }
+
+
+}
